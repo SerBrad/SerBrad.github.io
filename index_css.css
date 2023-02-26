@@ -1,0 +1,37 @@
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: black;
+    text-align: center;
+  }
+
+.floatingbox {
+
+    width: 15em;
+    border: 1px solid #333;
+    box-shadow: 8px 8px 5px #ebbefb;
+    padding: 8px 12px;
+    background-image: linear-gradient(180deg, #b96e6e, #ddd 40%, #ccc);
+
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 15px;
+
+  }                                                     
+
+
+
+#image1 {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+
+
+  
