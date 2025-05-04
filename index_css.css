@@ -1,37 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
 body {
-    background-color: lightblue;
-  }
+  margin: 0;
   
-  h1 {
-    color: black;
-    text-align: center;
-  }
+  font-family: 'Lato', sans-serif;
+  background-color:  #141619;
+  text-emphasis-color: #b3b4bd;
+}
 
-.floatingbox {
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+/* Navigation Bar */
+#navbar {
+  position: fixed; /* Keeps the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 60px; /* Adjust height as needed */
+  background-color: #141619;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000; /* Ensures the navbar stays above other elements */
+}
 
-    width: 15em;
-    border: 1px solid #333;
-    box-shadow: 8px 8px 5px #ebbefb;
-    padding: 8px 12px;
-    background-image: linear-gradient(180deg, #b96e6e, #ddd 40%, #ccc);
+/* Navigation Links */
+#navbar a {
+  color: #f2f2f2;
+  padding: 48px 46px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-    margin: auto;
-    width: 50%;
-    border: 3px solid black;
-    padding: 15px;
+/* Hover Effect */
+#navbar a:hover {
+  background-color: #ddd;
+  color: #0A21C0;
+}
 
-  }                                                     
+/* Active Link */
+#navbar a.active {
+  background-color: #b3b4bd;
+  color: white;
+}
+
+/* Page Content */
+.content {
+  margin-top: 60px; /* Adds space below the fixed navbar */
+  padding: 16px;
+}
 
 
-
-#image1 {
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
- 
+.navbar-title {
+  text-emphasis-color: #b3b4bd;
+  color: #f2f2f2;
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: 30px;
 }
 
 
 
+#name {
   
+  font-size: 64px;
+  font-weight: bolder;
+  color: #f1f1f1;
+margin-left: 200px;
+  margin-top: 100px;
+}
+
+#about-me {
+  font-size: 44px;
+  align-items: center;
+  color: #f1f1f1;
+
+  margin-top: 100px;
+  margin-left: 300px
+}
