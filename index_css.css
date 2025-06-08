@@ -160,77 +160,88 @@
         width: 100%;
       }
 
+    
+/*  WORK SECTION CSS */
+
+
+  /* TECH STACK FORMATION   */
+ 
+        .tech-section {
+          display:  center;
+          padding: 10rem;
+
+        }
+  
+        /* TECH STACK FORMATION   */
+
+    .tech-section-stacks {
+
+    display: flex;
+  flex-direction: row-reverse;
+  row-gap: 1rem;
+    }
+
+
+    
+    .tech-section-stacks svg{
+
+      max-width: 5vw;
+      max-height: 3vw;
+
+    }
+
+
+
+
+/*  WORK SECTION CSS */
+
+
+/*  BACKGROUND CSS */
+
+      /*  BACKGROUND FRAME CSS*/  
+      .background-section-frame {
+         margin-top: 10rem;
+          padding: 2rem;
+          display: flex;
+           flex-direction: row;
+           row-gap: 10px;
+  
+      }
+
+      .background-section-frame img {
+        
+        max-width: 50vw;
+        max-height: 25vw;
+      }
+
+
+ /*  BACKGROUND INSIDE CONTENT CSS*/  
       .background-section {
-        padding: 2rem 5rem;
-        display: grid;
-        grid-template-columns: 1fr 200px 1fr;
-        gap: 2rem;
-        align-items: center;
-        min-height: 100vh;
-      }
-
-      .background-content {
+       
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        
+        min-height: 40vw;
+        text-align: left;
+
       }
 
-      .background-section img {
-        width: 100%;
-        height: auto;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      .background-section p {
+        list-style-type:none;
+        font-size: 1.9vw;  
+        
       }
 
 
-      
-
-      .work-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        padding: 5rem;
-        text-align: center;
-      }
-
-      .work-section h1 {
-        --font-level: 6;
+      .background-section h1 {
+        font-size: 3vw;  
         margin-bottom: 2rem;
       }
 
-      [data-snap='true'] {
-        scroll-snap-type: y proximity;
-      }
-      [data-snap='true'] li {
-        scroll-snap-align: center;
-      }
+/*  BACKGROUND CSS */
 
 
 
-
-
-      
-      .work-section image {
-        min-width: 5rem;
-        max-width: 10rem;
-      }
-
-
-
-
-
-      h2,
-      li:last-of-type {
-        background: linear-gradient(
-          canvasText 50%,
-          color-mix(in oklch, canvas, canvasText 25%)
-        );
-        background-clip: text;
-        color: #0000;
-      }
-    }
 
     @layer demo {
       header {
@@ -313,7 +324,7 @@
       }
 
       body {
-        display: block;
+        display: grid;
         background: light-dark(white, black);
         min-height: 100vh;
         font-family: 'Geist', 'SF Pro Text', 'SF Pro Icons', 'AOS Icons',
@@ -391,20 +402,11 @@
           margin-right: 0;
         }
         
-        .background-section {
-          grid-template-columns: 1fr;
-          padding: 2rem;
-          text-align: center;
         
-        }
-        
-        .work-section {
-          padding: 2rem;
-        }
-        
+   
         header {
           padding-inline: 2rem;
         }
       }
     }
- 
+  }
