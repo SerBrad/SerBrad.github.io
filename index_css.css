@@ -191,6 +191,32 @@
     }
 
 
+    
+/* Add this to your CSS to remove animations from tech section */
+.tech-section ul li {
+  opacity: 1 !important;
+  animation: none !important;
+  filter: none !important;
+  color: inherit !important;
+}
+
+.tech-section ul {
+  animation: none !important;
+  view-timeline: none !important;
+}
+
+/* Optional: If you want to completely disable animations for the entire tech section */
+.tech-section * {
+  animation: none !important;
+  transition: none !important;
+}
+
+
+
+
+
+
+
 
 
 /*  WORK SECTION CSS */
@@ -206,12 +232,6 @@
            flex-direction: row;
            row-gap: 10px;
   
-      }
-
-      .background-section-frame img {
-        
-        max-width: 50vw;
-        max-height: 25vw;
       }
 
 
